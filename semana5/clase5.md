@@ -92,3 +92,25 @@ public class Estudiante {
 
 }
 ```
+
+## Creación de un Objeto
+Una clase es una plantilla para los objetos. Básicamente, un objeto se crea de una clase. En Java, se utiliza la palabra reservada `new` para crear nuevos objetos.
+
+Existen tres pasos para crear un objeto de una clase:
+1. *Declaración*: Una declaración de una variable con su nombre y tipo de objeto.
+2. *Instanciación*: Se utiliza la palabra reservada `new` para crear el objeto.
+3. *Inicialización*: La palabra reservada `new` es seguida por el llamado del constructor. Esto inicializa el nuevo objeto.
+
+## Acceso a Atributos y Métodos
+Se puede acceder a los atributos y métodos de una clase a través de sus objetos. Lo siguiente explica cómo hacerlo:
+
+```
+// Creación de un objeto
+lassie = new Perro();
+
+// Llamado a un atributo
+lassie.edad;
+
+// Llamado a un método
+lassie.comer();
+```
