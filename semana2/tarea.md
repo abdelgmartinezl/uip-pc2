@@ -3,7 +3,7 @@
 *Fecha de Revisión*: 24/09/2015
 
 ## Instrucciones:
-Crear un repositorio llamado 'uip-prog2' con la siguiente estructura de directorios y archivos:
+Crear un repositorio llamado *uip-prog2* con la siguiente estructura de directorios y archivos:
 
 ```
 uip-prog2
@@ -41,7 +41,7 @@ El archivo README.md debe contener lo siguiente:
 # Programación de Computadoras II - UIP
 
 * *Autor*: Abdel Martinez
-* *Version*: 1.0
+* *Versión*: 1.0
 
 Incluye una descripción.
 
