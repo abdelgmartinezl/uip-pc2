@@ -6,6 +6,7 @@ Los programas en Java deben considerar los siguientes puntos:
 * _Nombre de métodos_: Todos los nombres de métodos deben iniciar con una letra en minúsculas. Si varias palabras son utilizadas para formar el nombre del método, entonces las palabras siguientes a la primera deben iniciar en mayúsculas, ejemplo: calcularSalario().
 * _Nombre del archivo fuente_: El nombre del archivo del programa debe coincidir con el nombre de la clase y terminar con la extensión '.java'.
 * _Método principal_: El programa en Java que procesa el método principal del proyecto debe tener la siguiente línea: public static void main(String args[]).
+* _Punto y coma_: La mayor parte de las sentencias en Java deben terminar con punto y coma (;). En caso de omitirla, ocurrirá un error de compilación en tu programa.
 
 ## Identificadores
 Los nombres utilizados para las clases, variables y métodos se conocen como identificadores. Los mismos deben cumplir las siguientes reglas:
