@@ -104,7 +104,7 @@ Existen tres pasos para crear un objeto de una clase:
 ## Acceso a Atributos y Métodos
 Se puede acceder a los atributos y métodos de una clase a través de sus objetos. Lo siguiente explica cómo hacerlo:
 
-```
+```java
 // Creación de un objeto
 lassie = new Perro();
 
