@@ -48,3 +48,5 @@ Incluye una descripción.
 ## Licencia
 MIT License
 ```
+
+Finalmente, deben clonar el reposiorio ampotty/uip-pc2 para tener disponible todo el material del curso.
