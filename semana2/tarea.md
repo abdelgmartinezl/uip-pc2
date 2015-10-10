@@ -49,4 +49,4 @@ Incluye una descripción.
 MIT License
 ```
 
-Finalmente, deben clonar el reposiorio ampotty/uip-pc2 para tener disponible todo el material del curso.
+Finalmente, deben clonar el reposiorio *ampotty/uip-pc2* para tener disponible todo el material del curso.
