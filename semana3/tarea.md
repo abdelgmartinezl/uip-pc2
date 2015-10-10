@@ -4,6 +4,7 @@
 
 ## Instrucciones:
 En un documento de texto, responda las siguientes preguntas:
+
 1. ¿Qué es JavaFX?
 2. ¿Cómo se instala?
 3. ¿Cómo funciona?
