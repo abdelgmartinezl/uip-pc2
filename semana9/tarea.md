@@ -3,7 +3,7 @@
 *Fecha de Revisión*: 12/11/2015
 
 ## Instrucciones:
-1. Elabore un diagrama de clases y desarrolle un programa en Java que simule un cajero automático (ATM). El cajero automático debe poder realizar las siguientes acciones:
+Elabore un diagrama de clases y desarrolle un programa en Java que simule un cajero automático (ATM). El cajero automático debe poder realizar las siguientes acciones:
  * Encender. Un operador enciende la máquina luego del mantenimiento.
  * Apagar la máquina. Un operador apaga una máquina para que un técnico le de mantenimiento.
  * Iniciar una sesión. Se da cuando el cliente inserta una tarjeta dentro del cajero automático.
