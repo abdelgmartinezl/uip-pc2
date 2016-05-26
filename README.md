@@ -42,7 +42,7 @@ Ofrecer al alumno una visión general del lenguaje Java, introduciéndole en d
 - Laboratorios (10):   40%
 
 **Bibliografía:**
-- Allen B. Downey; Chris Mayfield. Think Java. O'Reilly Media, Inc. May 25, 2016. ISBN: 978-1-4919-2956-8. 260 pages.
+- *Allen B. Downey; Chris Mayfield*. **Think Java**. O'Reilly Media, Inc. May 25, 2016. ISBN: 978-1-4919-2956-8. 260 pages.
 
 ---
 
