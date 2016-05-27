@@ -16,23 +16,23 @@ Ofrecer al alumno una visión general del lenguaje Java, introduciéndole en d
 
 ---
 
-| SESIÓN | CONTENIDO                                                 | ACTIVIDADES                          |
-| ------ | --------------------------------------------------------- | ------------------------------------ |
-| 12 MAY | Presentación del curso                                    |                                      |
-| 19 MAY | Manejo de repositorios; Introducción a Github             | Laboratorio No.1                     |
-| 26 MAY | Programación en Java; Programación Orientada a Objetos    | Laboratorio No.2, Investigación No.1 |
-| 2 JUN  | Programación en Java; Programación Orientada a Objetos    | Laboratorio No.3                     |
-| 9 JUN  | Programación en Java; Programación Orientada a Objetos    | Laboratorio No.4                     |
-| 16 JUN | Programación en Java; Programación Orientada a Objetos    | Laboratorio No.5, Investigación No.2 |
-| 23 JUN | Programación en Java; Programación Orientada a Objetos    | Laboratorio No.6                     |
-| 30 JUN | Pruebas unitarias; Documentación técnica                  | Investigación No.3                   |
-| 7 JUL  | Conexión a bases de datos relacionales y no relacionales  | Laboratorio No.7                     |
-| 14 JUL | Creación de API RESTful                                   | Laboratorio No.8                     |
-| 21 JUL | JavaFX: Instalación y arquitectura                        | Investigación No.4                   |
-| 28 JUL | JavaFX: Componentes de interfaz gráfica                   | Laboratorio No.9                     |
-| 4 AGO  | JavaFX: Manejo de múltiples pantallas                     | Laboratorio No.10                    |
-| 11 AGO | JavaFX: Generación de APK                                 | Investigación No.5                   |
-| 18 AGO | Examen final                                              |                                      |
+| SESIÓN | CONTENIDO                                                                 | ACTIVIDADES                          |
+| ------ | ------------------------------------------------------------------------- | ------------------------------------ |
+| 12 MAY | Presentación del curso                                                    |                                      |
+| 19 MAY | Manejo de repositorios; Introducción a Github                             | Laboratorio No.1                     |
+| 26 MAY | Conceptos Iniciales; Variables y Operadores; Entrada y Salida; Licencias  | Laboratorio No.2, Investigación No.1 |
+| 2 JUN  | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.3                     |
+| 9 JUN  | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.4                     |
+| 16 JUN | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.5, Investigación No.2 |
+| 23 JUN | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.6                     |
+| 30 JUN | Pruebas unitarias; Documentación técnica                                  | Investigación No.3                   |
+| 7 JUL  | Conexión a bases de datos relacionales y no relacionales                  | Laboratorio No.7                     |
+| 14 JUL | Creación de API RESTful                                                   | Laboratorio No.8                     |
+| 21 JUL | JavaFX: Instalación y arquitectura                                        | Investigación No.4                   |
+| 28 JUL | JavaFX: Componentes de interfaz gráfica                                   | Laboratorio No.9                     |
+| 4 AGO  | JavaFX: Manejo de múltiples pantallas                                     | Laboratorio No.10                    |
+| 11 AGO | JavaFX: Generación de APK                                                 | Investigación No.5                   |
+| 18 AGO | Examen final                                                              |                                      |
 
 ---
 
