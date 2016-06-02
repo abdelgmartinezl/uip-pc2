@@ -20,8 +20,8 @@ Ofrecer al alumno una visión general del lenguaje Java, introduciéndole en d
 | ------ | ------------------------------------------------------------------------- | ------------------------------------ |
 | 12 MAY | Presentación del curso                                                    |                                      |
 | 19 MAY | Manejo de repositorios; Introducción a Github                             | Laboratorio No.1                     |
-| 26 MAY | Conceptos Iniciales; Variables y Operadores; Entrada y Salida; Licencias  | Laboratorio No.2, Investigación No.1 |
-| 2 JUN  | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.3                     |
+| 26 MAY | Conceptos Iniciales; Variables y Operadores; Entrada y Salida; Licencias; | Laboratorio No.2, Investigación No.1 |
+| 2 JUN  | Métodos Vacíos; Condiciones Lógicas; Programación Orientada a Objetos     | Laboratorio No.3                     |
 | 9 JUN  | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.4                     |
 | 16 JUN | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.5, Investigación No.2 |
 | 23 JUN | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.6                     |
