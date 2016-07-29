@@ -1,0 +1,10 @@
+Valor en: 0 = 0
+Valor en: 1 = 1
+Valor en: 2 = 2
+Valor en: 3 = 3
+Valor en: 4 = 4
+Valor en: 5 = 5
+Valor en: 6 = 6
+Valor en: 7 = 7
+Valor en: 8 = 8
+Valor en: 9 = 9
