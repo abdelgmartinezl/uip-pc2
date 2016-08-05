@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" >
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: FFF;">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="326.0" layoutY="327.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="txt_mensaje" layoutX="25.0" layoutY="28.0" prefHeight="127.0" prefWidth="351.0" text="Cirilo, eres&#10;menor de edad">
+               <font>
+                  <Font name="Avenir Roman" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_volver" layoutX="24.0" layoutY="182.0" mnemonicParsing="false" onAction="#cambioPantalla" text="VOLVER">
+               <font>
+                  <Font name="Avenir Medium" size="48.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
