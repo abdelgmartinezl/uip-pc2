@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="Ejemplo2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ejemplo2</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="ejemplo.Main" />
+        <option name="description" value="" />
+        <option name="height" value="500" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="Ejemplo Pantalla" />
+        <option name="vendor" value="UIP" />
+        <option name="width" value="500" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Ejemplo2.jar">
+        <element id="module-output" name="Ejemplo2" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Ejemplo2.jnlp">
+  <information>
+    <title>Ejemplo</title>
+    <vendor>UIP</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Ejemplo2.jar" size="5156" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="500" height="500" main-class="ejemplo.Main"  name="Ejemplo2" />
+  <update check="background"/>
+</jnlp>
