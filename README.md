@@ -16,30 +16,29 @@ Ofrecer al alumno una visión general del lenguaje Java, introduciéndole en d
 
 ---
 
-| SESIÓN | CONTENIDO                                                                 | ACTIVIDADES                          |
-| ------ | ------------------------------------------------------------------------- | ------------------------------------ |
-| 12 MAY | Presentación del curso                                                    |                                      |
-| 19 MAY | Manejo de repositorios; Introducción a Github                             | Laboratorio No.1                     |
-| 26 MAY | Conceptos Iniciales; Variables y Operadores; Entrada y Salida; Licencias; | Laboratorio No.2, Investigación No.1 |
-| 2 JUN  | Métodos Vacíos; Condiciones Lógicas; Programación Orientada a Objetos     | Laboratorio No.3                     |
-| 9 JUN  | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.4                     |
-| 16 JUN | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.5, Investigación No.2 |
-| 23 JUN | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.6                     |
-| 30 JUN | Pruebas unitarias; Documentación técnica                                  | Investigación No.3                   |
-| 7 JUL  | Conexión a bases de datos relacionales y no relacionales                  | Laboratorio No.7                     |
-| 14 JUL | Creación de API RESTful                                                   | Laboratorio No.8                     |
-| 21 JUL | JavaFX: Instalación y arquitectura                                        | Investigación No.4                   |
-| 28 JUL | JavaFX: Componentes de interfaz gráfica                                   | Laboratorio No.9                     |
-| 4 AGO  | JavaFX: Manejo de múltiples pantallas                                     | Laboratorio No.10                    |
-| 11 AGO | JavaFX: Generación de APK                                                 | Investigación No.5                   |
-| 18 AGO | Examen final                                                              |                                      |
+| SESIÓN | CONTENIDO                                                                 | ACTIVIDADES       |
+| ------ | ------------------------------------------------------------------------- | ----------------- |
+| 8 SEP  | Presentación del curso                                                    |                   |
+| 15 SEP | Manejo de repositorios; Introducción a Github                             | Laboratorio No.1  |
+| 22 SEP | Conceptos Iniciales; Variables y Operadores; Entrada y Salida; Licencias; | Laboratorio No.2  |
+| 29 SEP | Métodos Vacíos; Condiciones Lógicas; Programación Orientada a Objetos     | Laboratorio No.3  |
+| 6 OCT  | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.4  |
+| 13 OCT | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.5  |
+| 20 OCT | Programación en Java; Programación Orientada a Objetos                    | Laboratorio No.6  |
+| 27 OCT | Pruebas unitarias; Documentación técnica                                  | Laboratorio No.7  |
+| 3 NOV  | Conexión a bases de datos relacionales y no relacionales                  | Laboratorio No.8  |
+| 10 NOV | Creación de API RESTful                                                   | Laboratorio No.9  |
+| 17 NOV | JavaFX: Instalación y arquitectura                                        | Laboratorio No.10 |
+| 24 NOV | JavaFX: Componentes de interfaz gráfica                                   | Laboratorio No.11 |
+| 1 DIC  | JavaFX: Manejo de múltiples pantallas                                     | Laboratorio No.12 |
+| 8 DIC  | JavaFX: Generación de APK                                                 |                   |
+| 15 DIC | Examen final                                                              |                   | 
 
 ---
 
 **Evaluación:**
 - Examen Final:        30%
-- Investigaciones (5): 30%
-- Laboratorios (10):   40%
+- Laboratorios (10):   70%
 
 **Bibliografía:**
 - *Allen B. Downey; Chris Mayfield*. **Think Java**. O'Reilly Media, Inc. May 25, 2016. ISBN: 978-1-4919-2956-8. 260 pages.
