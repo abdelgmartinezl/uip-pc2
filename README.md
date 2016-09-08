@@ -2,7 +2,7 @@
 
 - **Profesor:** Abdel G. Martínez L.
 - **Correo Electrónico:** abdel_martinez@uip.edu.pa
-- **Horario del Curso:** Jueves, 5:45PM a 8:50PM
+- **Horario del Curso:** Jueves, 5:45PM a 9:35PM
 
 ---
 
