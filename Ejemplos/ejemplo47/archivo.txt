@@ -1,0 +1,4 @@
+El duplicado de 50 es 100
+El duplicado de 2 es 4
+El duplicado de 2 es 4
+El duplicado de 75 es 150
