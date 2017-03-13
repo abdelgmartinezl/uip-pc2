@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Secundaria">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #FAFBFC;">
+         <children>
+            <Pane layoutX="7.0" layoutY="5.0" prefHeight="67.0" prefWidth="482.0" style="-fx-background-color: #B9341B;">
+               <children>
+                  <Label layoutX="123.0" layoutY="9.0" text="CALCULADORA DE ITBMS&#10;Resultado" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fx:id="btn_volver" fitHeight="150.0" fitWidth="48.0" layoutX="170.0" layoutY="201.0" onMouseClicked="#volver" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="52.0" layoutX="263.0" layoutY="199.0" onMouseClicked="#guardar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@save.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="total" layoutX="94.0" layoutY="137.0" text="...............RESULTADO...............">
+               <font>
+                  <Font name="PT Sans" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="103.0" text="Total:" textAlignment="CENTER">
+               <font>
+                  <Font name="PT Sans Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
