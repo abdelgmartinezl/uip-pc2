@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mamallena.Habitaciones">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="480.0" style="-fx-background-color: #CCCCCC;">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="254.0" layoutX="195.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_cancelar" layoutX="38.0" layoutY="723.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelar" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #58FA58;" text="Cancelar">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_continuar" layoutX="253.0" layoutY="723.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#continuar" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #BCF5A9;" text="Continuar">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="btn_regresar" fitHeight="75.0" fitWidth="75.0" layoutX="43.0" layoutY="35.0" onMouseClicked="#regresar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@regresar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_suite" fitHeight="150.0" fitWidth="175.0" layoutX="46.0" layoutY="157.0" onMouseReleased="#habilitar_opcion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sui.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_deluxe" fitHeight="150.0" fitWidth="175.0" layoutX="268.0" layoutY="158.0" onMouseReleased="#habilitar_opcion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@del.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_ejecutiva" fitHeight="150.0" fitWidth="175.0" layoutX="45.0" layoutY="364.0" onMouseReleased="#habilitar_opcion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@eje.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_standard" fitHeight="150.0" fitWidth="175.0" layoutX="267.0" layoutY="365.0" onMouseReleased="#habilitar_opcion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sta.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="rb_suite" alignment="TOP_CENTER" layoutX="46.0" layoutY="322.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="178.0" text="Suite">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="habitacion" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rb_deluxe" alignment="TOP_CENTER" layoutX="266.0" layoutY="323.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="178.0" text="Deluxe" toggleGroup="$habitacion">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb_ejecutiva" alignment="TOP_CENTER" layoutX="47.0" layoutY="529.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="178.0" text="Ejecutiva" toggleGroup="$habitacion">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb_standard" alignment="TOP_CENTER" layoutX="267.0" layoutY="530.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="178.0" text="Standard" toggleGroup="$habitacion">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="47.0" layoutY="587.0" text="Cantidad de Personas">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="81.0" layoutY="660.0" prefWidth="150.0" />
+            <Label layoutX="116.0" layoutY="632.0" text="Adultos">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="261.0" layoutY="660.0" prefWidth="150.0" />
+            <Label layoutX="306.0" layoutY="632.0" text="Niños">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
