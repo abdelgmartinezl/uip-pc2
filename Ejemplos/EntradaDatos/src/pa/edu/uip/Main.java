@@ -18,5 +18,7 @@ public class Main {
         nombre = br.readLine();
         System.out.print("Edad: ");
         edad = Integer.parseInt(br.readLine());
+
+        System.out.println(nombre + " tienes " + edad + " años.");
     }
 }
