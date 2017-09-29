@@ -15,6 +15,8 @@ public class Main {
             edad = Integer.parseInt(xx.readLine());
             if (edad > 0 && edad <= 100) {
                 break;
+            } else {
+                System.out.println("Invalida. Vuelve a ingresar la edad.");
             }
         }
 
