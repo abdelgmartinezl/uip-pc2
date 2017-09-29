@@ -21,6 +21,8 @@ public class Main {
 
         if (edad < 18) {
             System.out.println("Larga de aqui lapecillo!");
+        } else if (edad == 18) {
+            System.out.println("Ya no eres tan lapecillo!");
         } else {
             System.out.println("Larga a estudiar!");
         }
