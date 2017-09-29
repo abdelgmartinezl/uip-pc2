@@ -29,8 +29,10 @@ public class Main {
                 System.out.println("Naciste en el cuarto mes del año");
                 break;
             default:
-                System.out.println("Naciste del cuarto al doceavo mes del año");
+                System.out.println("Naciste del quinto al doceavo mes del año");
                 break;
         }
+
+        System.out.println("Hasta luego " + nombre);
     }
 }
