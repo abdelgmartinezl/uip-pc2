@@ -19,6 +19,11 @@ public class Main {
         System.out.print("Edad: ");
         edad = Integer.parseInt(br.readLine());
 
-        System.out.println(nombre + " tienes " + edad + " años.");
+        if (edad < 18) {
+            System.out.println("Larga de aqui lapecillo!");
+        } else {
+            System.out.println("Larga a estudiar!");
+        }
+
     }
 }
