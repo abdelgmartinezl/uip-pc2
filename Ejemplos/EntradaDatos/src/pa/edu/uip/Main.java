@@ -21,6 +21,10 @@ public class Main {
         System.out.print("Edad: ");
         edad = Integer.parseInt(br.readLine());
 
+        // INT Integer.parseInt()
+        // DOU Double.parseDouble()
+        // FLO Float.parseFloat()
+
         if (edad < 18) {
             System.out.println("Larga de aqui lapecillo!");
         } else if (edad == 18) {
