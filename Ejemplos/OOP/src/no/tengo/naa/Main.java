@@ -47,6 +47,7 @@ public class Main {
                 case 8:
                     break;
                 case 9:
+                    System.out.print("¡Hasta luego!");
                     break;
                 default:
                     System.out.println("ERROR :: Opción inválida.");
