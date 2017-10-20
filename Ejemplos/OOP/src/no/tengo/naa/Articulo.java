@@ -3,14 +3,14 @@ package no.tengo.naa;
 public class Articulo {
     private String id;
     private String nombre;
-    private float dimensiones;
-    private float precioUnitario;
+    private double peso;
+    private double precioUnitario;
     private int cantidad;
 
-    public Articulo(String id, String nombre, float dimensiones, float precioUnitario, int cantidad) {
+    public Articulo(String id, String nombre, double peso, double precioUnitario, int cantidad) {
         this.id = id;
         this.nombre = nombre;
-        this.dimensiones = dimensiones;
+        this.peso = peso;
         this.precioUnitario = precioUnitario;
         this.cantidad = cantidad;
     }
