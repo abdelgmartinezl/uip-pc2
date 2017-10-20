@@ -34,38 +34,49 @@ public class Main {
                     String i = "", n = "";
                     double p = 0.0, pu = 0.0;
                     int c = 0;
-                    try {
-                        System.out.print("ID: ");
-                        i = br.readLine();
-                    } catch (Exception e) {
-                        System.out.println("ID inválido. Intente nuevamente");
-                    }
-                    try {
-                        System.out.print("Nombre: ");
-                        n = br.readLine();
-                    } catch (Exception e) {
-                        System.out.println("Nombre inválido. Intente nuevamente");
-                    }
-                    try {
-                        System.out.print("Peso: ");
-                        p = Double.parseDouble(br.readLine());
-                    } catch (Exception e) {
-                        System.out.println("Peso inválido. Intente nuevamente");
-                    }
-                    try {
-                        System.out.print("Precio Unitario: ");
-                        pu = Double.parseDouble(br.readLine());
-                    } catch (Exception e) {
-                        System.out.println("Precio unitario inválido. Intente nuevamente");
-                    }
-                    try {
-                        System.out.print("Cantidad: ");
-                        c = Integer.parseInt(br.readLine());
-                    } catch (Exception e) {
-                        System.out.println("Cantidad inválida. Intente nuevamente");
-                    }
+                    do {
+                        try {
+                            System.out.print("ID: ");
+                            i = br.readLine();
+                        } catch (Exception e) {
+                            System.out.println("ID inválido. Intente nuevamente");
+                        }
+                    } while (i.equals("") && i.equals(" ") && i.equals("-"));
+                    do {
+                        try {
+                            System.out.print("Nombre: ");
+                            n = br.readLine();
+                        } catch (Exception e) {
+                            System.out.println("Nombre inválido. Intente nuevamente");
+                        }
+                    } while (i.equals("") && i.equals(" ") && i.equals("-"));
+                    do {
+                        try {
+                            System.out.print("Peso: ");
+                            p = Double.parseDouble(br.readLine());
+                        } catch (Exception e) {
+                            System.out.println("Peso inválido. Intente nuevamente");
+                        }
+                    } while (p <= 0);
+                    do {
+                        try {
+                            System.out.print("Precio Unitario: ");
+                            pu = Double.parseDouble(br.readLine());
+                        } catch (Exception e) {
+                            System.out.println("Precio unitario inválido. Intente nuevamente");
+                        }
+                    } while (pu <= 0);
+                    do {
+                        try {
+                            System.out.print("Cantidad: ");
+                            c = Integer.parseInt(br.readLine());
+                        } catch (Exception e) {
+                            System.out.println("Cantidad inválida. Intente nuevamente");
+                        }
+                    } while (c <= 0);
                     Articulo a = new Articulo(i, n, p, pu, c);
                     inventario.add(a);
+                    System.out.println(inventario.size());// ESTO NO VA
                     break;
                 case 3:
                     break;
