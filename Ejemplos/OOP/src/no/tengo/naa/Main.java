@@ -1,3 +1,5 @@
+// https://github.com/ampotty/uip-pc2/Ejemplos/OOP
+
 package no.tengo.naa;
 
 import java.io.BufferedReader;
@@ -21,13 +23,48 @@ public class Main {
             System.out.print("OPCION: ");
             try {
                 opcion = Integer.parseInt(br.readLine());
-            } catch (IOException e) {
-                System.out.println("NO FUNCIONA EL TECLADO");
             } catch (NumberFormatException e) {
                 System.out.println("DATA BASURA");
+            } catch (Exception e) {
+                System.out.println("ERROR DESCONOCIDO");
+            }
+
+            switch (opcion) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                default:
+                    System.out.println("ERROR :: Opción inválida.");
+                    break;
             }
         }
 
         System.out.println("Vamos pa lante!");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
