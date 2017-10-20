@@ -7,11 +7,20 @@ public class Articulo {
     private float precioUnitario;
     private int cantidad;
 
-    public int vender() {
-        return 0;
+    public Articulo(String id, String nombre, float dimensiones, float precioUnitario, int cantidad) {
+        this.id = id;
+        this.nombre = nombre;
+        this.dimensiones = dimensiones;
+        this.precioUnitario = precioUnitario;
+        this.cantidad = cantidad;
     }
 
-    public int almacenar() {
-        return 0;
+    public void consultar() {
+    }
+
+    public void anadir() {
+    }
+
+    public void borrar() {
     }
 }
