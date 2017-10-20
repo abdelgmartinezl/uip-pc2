@@ -1,7 +1,7 @@
 package no.tengo.naa;
 
 public class Articulo {
-    private int id;
+    private String id;
     private String nombre;
     private float dimensiones;
     private float precioUnitario;
