@@ -3,7 +3,6 @@
 package no.tengo.naa;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
@@ -76,7 +75,6 @@ public class Main {
                     } while (c <= 0);
                     Articulo a = new Articulo(i, n, p, pu, c);
                     inventario.add(a);
-                    System.out.println(inventario.size());// ESTO NO VA
                     break;
                 case 3:
                     break;
