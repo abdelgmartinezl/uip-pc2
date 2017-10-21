@@ -1,3 +1,5 @@
+// https://github.com/ampotty/uip-pc2/Ejemplos/TrabajaVago
+
 package com.trabajavago;
 
 import java.io.BufferedReader;
