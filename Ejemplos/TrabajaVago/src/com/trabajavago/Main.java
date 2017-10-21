@@ -3,11 +3,13 @@ package com.trabajavago;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         byte opcion = 0;
+        ArrayList<Tarea> lista_tareas = new ArrayList<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         do {
@@ -24,7 +26,24 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    //AQUI
+                    String nombre, fecha_tope, criticidad;
+                    System.out.print("Nombre: ");
+                    nombre = br.readLine();
+                    System.out.print("Fecha Tope: ");
+                    fecha_tope = br.readLine();
+                    do {
+                        System.out.print("Criticidad (Alta/Media/Baja): ");
+                        criticidad = br.readLine();
+                        if (criticidad.toLowerCase().equals("alta") || criticidad.toLowerCase().equals("media")
+                                || criticidad.toLowerCase().equals("baja"))
+                            break;
+                        else
+                            System.out.println("¡Criticidad invalida!");
+                    } while(true);
+
+                    Tarea t = new Tarea(nombre, fecha_tope, criticidad);
+                    lista_tareas.add(t);
+                    System.out.println("La lista tiene " + lista_tareas.size());// NO VA
                     break;
                 case 2:
                     //ACA
@@ -33,7 +52,7 @@ public class Main {
                     //ACULLA
                     break;
                 case 4:
-                    //AHI
+                    System.out.println("Hasta el viernes!");
                     break;
                 default:
                     System.out.println("Opcion fuera de rango");
