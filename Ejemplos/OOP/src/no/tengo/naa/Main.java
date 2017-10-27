@@ -13,6 +13,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<Articulo> inventario = new ArrayList<>();
         inventario.add(new Articulo("1", "Papel", 0.05, 0.10, 50));
+        inventario.add(new Articulo("2", "Piedra", 2.50, 0.01, 2));
 
         while (opcion != 4) {
             System.out.println("\n\n¡Bienvenido a No Tengo Naa!");
@@ -41,7 +42,7 @@ public class Main {
                             } catch (Exception e) {
                                 System.out.println("ID inválido. Intente nuevamente");
                             }
-                        } while (b.equals("") && b.equals(" ") && b.equals("-"));
+                        } while (b.equals("") || b.equals(" ") || b.equals("-"));
                         for (Articulo a : inventario) {
                             if (b.equals(a.getId())) {
                                 encontrado = true;
@@ -69,7 +70,7 @@ public class Main {
                         } catch (Exception e) {
                             System.out.println("ID inválido. Intente nuevamente");
                         }
-                    } while (i.equals("") && i.equals(" ") && i.equals("-"));
+                    } while (i.equals("") || i.equals(" ") || i.equals("-"));
                     do {
                         try {
                             System.out.print("Nombre: ");
@@ -77,7 +78,7 @@ public class Main {
                         } catch (Exception e) {
                             System.out.println("Nombre inválido. Intente nuevamente");
                         }
-                    } while (i.equals("") && i.equals(" ") && i.equals("-"));
+                    } while (i.equals("") || i.equals(" ") || i.equals("-"));
                     do {
                         try {
                             System.out.print("Peso: ");
@@ -106,6 +107,33 @@ public class Main {
                     inventario.add(a);
                     break;
                 case 3:
+                    b = "";
+                    encontrado = false;
+                    if (inventario.size() == 0) {
+                        System.out.println("No hay articulos en el inventario.");
+                    } else {
+                        System.out.println("Lista de Articulos");
+                        for (Articulo x : inventario) {
+                            System.out.println(x.getId() + " - " + x.getNombre());
+                        }
+                        do {
+                            try {
+                                System.out.print("ID del articulo a borrar: ");
+                                b = br.readLine();
+                            } catch (Exception e) {
+                                System.out.println("ID inválido. Intente nuevamente");
+                            }
+                        } while (b.equals("") || b.equals(" ") || b.equals("-"));
+                        for (Articulo x : inventario) {
+                            if (b.equals(x.getId())) {
+                                encontrado = true;
+                                inventario.remove(x);
+                            }
+                        }
+                        if (encontrado == false) {
+                            System.out.println("Mala suerte lapecillo");
+                        }
+                    }
                     break;
                 case 4:
                     System.out.print("¡Hasta luego!");
