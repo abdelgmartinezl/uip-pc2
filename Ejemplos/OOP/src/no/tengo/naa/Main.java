@@ -12,9 +12,10 @@ public class Main {
         int opcion = 0;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<Articulo> inventario = new ArrayList<>();
+        inventario.add(new Articulo("1", "Papel", 0.05, 0.10, 50));
 
         while (opcion != 4) {
-            System.out.println("¡Bienvenido a No Tengo Naa!");
+            System.out.println("\n\n¡Bienvenido a No Tengo Naa!");
             System.out.println("SISTEMA DE INVENTARIO - MENÚ");
             System.out.println("1. Consultar\n2. Añadir\n3. Borrar\n4. Salir");
             System.out.print("OPCION: ");
@@ -28,6 +29,34 @@ public class Main {
 
             switch (opcion) {
                 case 1:
+                    String b = "";
+                    boolean encontrado = false;
+                    if (inventario.size() == 0) {
+                        System.out.println("No hay articulos en el inventario.");
+                    } else {
+                        do {
+                            try {
+                                System.out.print("ID: ");
+                                b = br.readLine();
+                            } catch (Exception e) {
+                                System.out.println("ID inválido. Intente nuevamente");
+                            }
+                        } while (b.equals("") && b.equals(" ") && b.equals("-"));
+                        for (Articulo a : inventario) {
+                            if (b.equals(a.getId())) {
+                                encontrado = true;
+                                System.out.println("Encontré el artículo");
+                                System.out.println("ID = " + a.getId());
+                                System.out.println("Nombre = " + a.getNombre());
+                                System.out.println("Peso = " + a.getPeso());
+                                System.out.println("Precio Unitario = $" + a.getPrecioUnitario());
+                                System.out.println("Cantidad = " + a.getCantidad());
+                            }
+                        }
+                        if (encontrado == false) {
+                            System.out.println("Mala suerte lapecillo");
+                        }
+                    }
                     break;
                 case 2:
                     String i = "", n = "";
