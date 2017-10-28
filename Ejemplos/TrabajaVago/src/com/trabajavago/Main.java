@@ -11,6 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         byte opcion = 0;
+
         ArrayList<Tarea> lista_tareas = new ArrayList<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -55,14 +56,36 @@ public class Main {
                     if (lista_tareas.size() == 0) {
                         System.out.println("No hay tareas pendientes.");
                     } else {
+                        int i = 1;
                         for (Tarea a : lista_tareas) {
-                            System.out.println("[] " + a.getNombre() + " (" + a.getFecha_tope() + ")");
+                            System.out.println(i + "[] " + a.getNombre() + " (" + a.getFecha_tope() + ")");
                             System.out.println("Criticidad: " + a.getCriticidad());
+                            i++;
                         }
                     }
                     break;
                 case 3:
-                    
+                    if (lista_tareas.size() == 0) {
+                        System.out.println("No hay tareas por completar.");
+                    } else {
+                        int opc_bor = 0;
+                        for (int i = 0; i < lista_tareas.size(); i++) {
+                            System.out.println(i+1 + ". " + lista_tareas.get(i).getNombre());
+                        }
+                        do {
+                            System.out.print("Numero de tarea a borrar: ");
+                            try {
+                                opc_bor = Integer.parseInt(br.readLine());
+                            } catch (Exception e) {
+                                System.out.println("Tarea invalida. Intente nuevamente.");
+                            }
+                            if (opc_bor <= 0 || opc_bor > lista_tareas.size()) {
+                                System.out.println("Tarea no existente");
+                            }
+                        } while(opc_bor <= 0 || opc_bor > lista_tareas.size());
+
+                        lista_tareas.remove(opc_bor-1);
+                    }
                     break;
                 case 4:
                     System.out.println("Hasta el viernes!");

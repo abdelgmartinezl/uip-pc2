@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TrabajaVago:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TrabajaVago_jar</output-path>
+    <root id="archive" name="TrabajaVago.jar">
+      <element id="module-output" name="TrabajaVago" />
+    </root>
+  </artifact>
+</component>
