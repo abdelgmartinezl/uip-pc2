@@ -15,7 +15,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         do {
-            System.out.println("APP: TRABAJAVAGO");
+            System.out.println("\n\nAPP: TRABAJAVAGO");
             System.out.println("1. Agregar\n2. Ver\n3. Completar\n4. Salir");
             System.out.print("Opcion: ");
             try {
@@ -43,15 +43,26 @@ public class Main {
                             System.out.println("¡Criticidad invalida!");
                     } while(true);
 
-                    Tarea t = new Tarea(nombre, fecha_tope, criticidad);
+                    //Tarea t = new Tarea(nombre, fecha_tope, criticidad);
+                    Tarea t = new Tarea();
+                    t.setNombre(nombre);
+                    t.setEstado("EnProgreso");
+                    t.setCriticidad(criticidad);
+                    t.setFecha_tope(fecha_tope);
                     lista_tareas.add(t);
-                    System.out.println("La lista tiene " + lista_tareas.size());// NO VA
                     break;
                 case 2:
-                    //ACA
+                    if (lista_tareas.size() == 0) {
+                        System.out.println("No hay tareas pendientes.");
+                    } else {
+                        for (Tarea a : lista_tareas) {
+                            System.out.println("[] " + a.getNombre() + " (" + a.getFecha_tope() + ")");
+                            System.out.println("Criticidad: " + a.getCriticidad());
+                        }
+                    }
                     break;
                 case 3:
-                    //ACULLA
+                    
                     break;
                 case 4:
                     System.out.println("Hasta el viernes!");
