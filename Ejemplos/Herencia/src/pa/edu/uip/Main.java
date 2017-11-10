@@ -15,5 +15,8 @@ public class Main {
         c.calcularVolumen();
         System.out.println("Area = " + c.area);
         System.out.println("Volumen = " + c.volumen);
+
+        Vector1 x = new Vector1();
+        System.out.println("El producto punto es "+  x.productoPunto());
     }
 }
