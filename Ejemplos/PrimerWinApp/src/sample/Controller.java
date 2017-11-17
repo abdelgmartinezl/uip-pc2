@@ -4,8 +4,11 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+
+import java.util.Optional;
 
 public class Controller {
 
@@ -15,18 +18,31 @@ public class Controller {
     Label cantidad;
 
     public void clicar(ActionEvent actionEvent) {
+        Alert alerta;
         int c = Integer.parseInt(cantidad.getText());
         c += 1;
         switch (c) {
             case 25:
-                Alert alerta = new Alert(Alert.AlertType.CONFIRMATION);
-                alerta.setTitle("Confirmación de Salida");
+                alerta = new Alert(Alert.AlertType.INFORMATION);
+                alerta.setTitle("Avanzando 25 clics");
+                alerta.setContentText("BIRRIOSO");
+                alerta.showAndWait();
                 break;
             case 50:
-                System.out.println("Ocioso(a)");
+                alerta = new Alert(Alert.AlertType.WARNING);
+                alerta.setTitle("Avanzando 50 clics");
+                alerta.setContentText("OCIOSO");
+                alerta.showAndWait();
                 break;
             case 100:
-                Platform.exit();
+                alerta = new Alert(Alert.AlertType.CONFIRMATION);
+                alerta.setTitle("Confirmación de Salida");
+                alerta.setHeaderText("Mmm, Quieres salir?");
+                alerta.setContentText("Estás seguro?");
+                Optional<ButtonType> resultado = alerta.showAndWait();
+                if (resultado.get() == ButtonType.OK) {
+                    Platform.exit();
+                }
                 break;
         }
         cantidad.setText(String.valueOf(c));
