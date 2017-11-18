@@ -1,8 +1,60 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="315.0" prefWidth="375.0" style="-fx-background-color: #0B615E;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <children>
+            <Button layoutX="25.0" layoutY="103.0" mnemonicParsing="false" onAction="#contar" style="-fx-background-color: #F7FE2E;" text="Contar">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Label layoutX="25.0" layoutY="19.0" text="Cantidad:" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Roman" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="262.0" layoutY="31.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="Courier New" size="50.0" />
+               </font>
+            </Label>
+            <TextField layoutX="141.0" layoutY="108.0" prefHeight="27.0" prefWidth="208.0">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="133.0" layoutY="170.0" mnemonicParsing="false" onAction="#saludar" style="-fx-background-color: #F7FE2E;" text="Saludar">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="149.0" layoutY="238.0" mnemonicParsing="false" onAction="#salir" style="-fx-background-color: #F7FE2E;" text="Salir">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
 </GridPane>
