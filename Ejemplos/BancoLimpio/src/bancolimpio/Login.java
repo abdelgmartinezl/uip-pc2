@@ -48,6 +48,9 @@ public class Login {
                 ft.setFromValue(0.0);
                 ft.setToValue(1.0);
                 ft.play();
+                Resumen controller = fxmlLoader.<Resumen>getController();
+                controller.setCuenta();
+                controller.setSaldo();
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
