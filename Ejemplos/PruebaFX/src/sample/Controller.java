@@ -59,5 +59,7 @@ public class Controller {
         if (resultado.get() == ButtonType.OK) {
             Platform.exit();
         }
+
+        int x = Integer.parseInt(campoblanco.getText());
     }
 }
