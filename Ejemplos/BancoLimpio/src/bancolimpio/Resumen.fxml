@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="135.0" prefWidth="445.0" style="-fx-background-color: #E0ECF8;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancolimpio.Resumen">
+<AnchorPane prefHeight="135.0" prefWidth="445.0" style="-fx-background-color: #E0ECF8;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancolimpio.Resumen">
    <children>
       <Pane prefHeight="51.0" prefWidth="445.0" style="-fx-background-color: #0B0B61;">
          <children>
@@ -18,7 +17,7 @@
                   <Font name="Arial Black" size="20.0" />
                </font>
             </Label>
-            <ImageView fitHeight="29.0" fitWidth="54.0" layoutX="402.0" layoutY="11.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="salir" fitHeight="29.0" fitWidth="54.0" layoutX="402.0" layoutY="11.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@salir.png" />
                </image>
