@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="135.0" prefWidth="445.0" style="-fx-background-color: #E0ECF8;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancolimpio.Resumen">
+<AnchorPane prefHeight="250.0" prefWidth="445.0" style="-fx-background-color: #E0ECF8;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancolimpio.Movimientos">
    <children>
       <Pane prefHeight="51.0" prefWidth="445.0" style="-fx-background-color: #0B0B61;">
          <children>
@@ -22,24 +22,23 @@
                   <Image url="@salir.png" />
                </image>
             </ImageView>
+            <ImageView fx:id="atras" fitHeight="29.0" fitWidth="54.0" layoutX="362.0" layoutY="11.0" onMouseClicked="#atras" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@atras.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
-      <Label layoutX="20.0" layoutY="67.0" text="Cuentas de Ahorro">
+      <Label layoutX="20.0" layoutY="67.0" text="Cuenta de Ahorro">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="cuenta" layoutX="20.0" layoutY="92.0" text="####-####-#" textFill="#808080">
+      <Label fx:id="cuenta" layoutX="169.0" layoutY="67.0" text="####-####-#" textFill="#808080">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="saldo" layoutX="124.0" layoutY="92.0" text="\$######.##" textFill="#808080">
-         <font>
-            <Font name="Arial" size="13.0" />
-         </font>
-      </Label>
-      <Button fx:id="transferir" layoutX="223.0" layoutY="87.0" mnemonicParsing="false" onAction="#transferir" style="-fx-background-color: #FFFFFF;" text="Transferir" />
-      <Button fx:id="movimientos" layoutX="324.0" layoutY="87.0" mnemonicParsing="false" onAction="#ver" style="-fx-background-color: #FFFFFF;" text="Movimientos" />
+      <ListView fx:id="movimientos" layoutX="31.0" layoutY="98.0" prefHeight="127.0" prefWidth="384.0" />
    </children>
 </AnchorPane>

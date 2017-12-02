@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="135.0" prefWidth="445.0" style="-fx-background-color: #E0ECF8;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancolimpio.Resumen">
+<AnchorPane prefHeight="135.0" prefWidth="445.0" style="-fx-background-color: #E0ECF8;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bancolimpio.Resumen">
    <children>
       <Pane prefHeight="51.0" prefWidth="445.0" style="-fx-background-color: #0B0B61;">
          <children>
@@ -39,7 +39,7 @@
             <Font name="Arial" size="13.0" />
          </font>
       </Label>
-      <Button layoutX="223.0" layoutY="87.0" mnemonicParsing="false" onAction="#transferir" style="-fx-background-color: #FFFFFF;" text="Transferir" />
-      <Button layoutX="324.0" layoutY="87.0" mnemonicParsing="false" onAction="#ver" style="-fx-background-color: #FFFFFF;" text="Movimientos" />
+      <Button fx:id="transferir" layoutX="223.0" layoutY="87.0" mnemonicParsing="false" onAction="#transferir" style="-fx-background-color: #FFFFFF;" text="Transferir" />
+      <Button fx:id="movimientos" layoutX="324.0" layoutY="87.0" mnemonicParsing="false" onAction="#ver" style="-fx-background-color: #FFFFFF;" text="Movimientos" />
    </children>
 </AnchorPane>

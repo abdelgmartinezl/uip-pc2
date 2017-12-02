@@ -2,14 +2,15 @@ package bancolimpio;
 
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -21,22 +22,27 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Observable;
 
-public class Resumen {
-    @FXML
-    Label cuenta;
-    @FXML
-    Label saldo;
+
+public class Movimientos {
+
     @FXML
     ImageView salir;
     @FXML
-    Button movimientos;
+    ImageView atras;
+    @FXML
+    ListView movimientos;
+    @FXML
+    Label cuenta;
 
     String n;
-    double s = 0.0;
 
-    public void setCuenta() {
+    public void cargar_movimientos(String nc) {
+        cuenta.setText(nc);
+
         String linea = null;
+        ObservableList<String> listViewData = FXCollections.observableArrayList();
         try {
             FileReader fileReader = new FileReader("supersecreto.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -44,10 +50,12 @@ public class Resumen {
                 List<String> datos = Arrays.asList(linea.split(","));
                 n = datos.get(0);
                 if (n.equals("123456")) {
-                    if (datos.get(2).equals("RETIRO") || datos.get(2).equals("TRANSFERIR")) {
-                        s -= Double.parseDouble(datos.get(3));
+                    if (datos.get(2).equals("RETIRO")) {
+                        listViewData.add("Se retiro $" + datos.get(3).toString());
+                    } else if (datos.get(2).equals("TRANSFERIR")) {
+                        listViewData.add("Se transfirio $" + datos.get(3).toString());
                     } else {
-                        s += Double.parseDouble(datos.get(3));
+                        listViewData.add("Se deposito $" + datos.get(3).toString());
                     }
                 }
             }
@@ -58,38 +66,7 @@ public class Resumen {
             System.out.println("Problema con super secreto...");
         }
 
-        cuenta.setText(n);
-    }
-
-    public void setSaldo() {
-        saldo.setText(String.valueOf(s));
-    }
-
-    public void ver(ActionEvent actionEvent) {
-        Stage stage = (Stage) movimientos.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Movimientos.fxml"));
-        Parent root = null;
-        try {
-            root = fxmlLoader.load();
-        } catch (Exception e) {
-            Alert alerta = new Alert(Alert.AlertType.ERROR);
-            alerta.setTitle("Error de Aplicación");
-            alerta.setContentText("Llama al lapecillo de sistemas.");
-            alerta.showAndWait();
-            Platform.exit();
-        }
-        FadeTransition ft = new FadeTransition(Duration.millis(1500), root);
-        ft.setFromValue(0.0);
-        ft.setToValue(1.0);
-        ft.play();
-        Movimientos controller = fxmlLoader.<Movimientos>getController();
-        controller.cargar_movimientos(cuenta.getText());
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public void transferir(ActionEvent actionEvent) {
+        movimientos.setItems(listViewData);
     }
 
     public void salir(MouseEvent mouseEvent) {
@@ -109,6 +86,31 @@ public class Resumen {
         ft.setFromValue(0.0);
         ft.setToValue(1.0);
         ft.play();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void atras(MouseEvent mouseEvent) {
+        Stage stage = (Stage) atras.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Resumen.fxml"));
+        Parent root = null;
+        try {
+            root = fxmlLoader.load();
+        } catch (Exception e) {
+            Alert alerta = new Alert(Alert.AlertType.ERROR);
+            alerta.setTitle("Error de Aplicación");
+            alerta.setContentText("Llama al lapecillo de sistemas.");
+            alerta.showAndWait();
+            Platform.exit();
+        }
+        FadeTransition ft = new FadeTransition(Duration.millis(1500), root);
+        ft.setFromValue(0.0);
+        ft.setToValue(1.0);
+        ft.play();
+        Resumen controller = fxmlLoader.<Resumen>getController();
+        controller.setCuenta();
+        controller.setSaldo();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
