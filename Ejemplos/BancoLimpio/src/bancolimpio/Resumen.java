@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Resumen {
     @FXML
-    Label cuenta;
+    Label cuenta; // Tiene el numero de cuenta (12345) ¯\_(ツ)_/¯
     @FXML
     Label saldo;
     @FXML
@@ -35,6 +35,7 @@ public class Resumen {
     String n;
     double s = 0.0;
 
+    // Se ejecuta cuando carga la pantalla
     public void setCuenta() {
         String linea = null;
         try {
@@ -61,10 +62,12 @@ public class Resumen {
         cuenta.setText(n);
     }
 
+    // Se ejecuta cuando carga la pantalla
     public void setSaldo() {
         saldo.setText(String.valueOf(s));
     }
 
+    // Evento para ver los movimientos de la cuenta (Movimientos)
     public void ver(ActionEvent actionEvent) {
         Stage stage = (Stage) movimientos.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Movimientos.fxml"));
@@ -89,7 +92,29 @@ public class Resumen {
         stage.show();
     }
 
+    // Evento para hacer transferencias (Transferencia)
     public void transferir(ActionEvent actionEvent) {
+        Stage stage = (Stage) movimientos.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Transferencia.fxml"));
+        Parent root = null;
+        try {
+            root = fxmlLoader.load();
+        } catch (Exception e) {
+            Alert alerta = new Alert(Alert.AlertType.ERROR);
+            alerta.setTitle("Error de Aplicación");
+            alerta.setContentText("Llama al lapecillo de sistemas.");
+            alerta.showAndWait();
+            Platform.exit();
+        }
+        FadeTransition ft = new FadeTransition(Duration.millis(1500), root);
+        ft.setFromValue(0.0);
+        ft.setToValue(1.0);
+        ft.play();
+        Transferencia controller = fxmlLoader.<Transferencia>getController();
+        controller.cargar_datos(cuenta.getText()); // ¯\_(ツ)_/¯ cuenta viene de la linea 27
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void salir(MouseEvent mouseEvent) {

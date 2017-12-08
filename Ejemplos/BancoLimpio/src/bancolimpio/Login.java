@@ -26,6 +26,7 @@ public class Login {
 
     int intentos = 0;
 
+    // Acción para cambiar a la segunda pantalla (Resumen)
     public void ingresar(ActionEvent actionEvent) throws IOException {
         String u = usuario.getText();
         String p = password.getText();
