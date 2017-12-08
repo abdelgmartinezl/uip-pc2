@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="243.0" prefWidth="200.0">
+         <children>
+            <ComboBox fx:id="opcion" layoutX="25.0" layoutY="28.0" onAction="#mostrar" prefWidth="150.0" promptText="Animales..." />
+            <TextArea fx:id="descripcion" layoutX="25.0" layoutY="70.0" prefHeight="53.0" prefWidth="150.0" />
+            <CheckBox fx:id="hembra" layoutX="30.0" layoutY="134.0" mnemonicParsing="false" onAction="#digerir" text="Hembra" />
+            <CheckBox fx:id="macho" layoutX="105.0" layoutY="134.0" mnemonicParsing="false" onAction="#digerir" text="Macho" />
+            <TextField fx:id="nombre" layoutX="22.0" layoutY="164.0" prefHeight="27.0" prefWidth="160.0" promptText="NOMBRE..." />
+            <Button fx:id="continuar" layoutX="71.0" layoutY="191.0" mnemonicParsing="false" onAction="#continuar" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
