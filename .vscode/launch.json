@@ -1,0 +1,310 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Principal<Clase10>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "excepciones.Principal",
+            "projectName": "Clase10",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Principal<Clase11>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Principal",
+            "projectName": "Clase11",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Programa<Clase11>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Programa",
+            "projectName": "Clase11",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Prueba<Clase12>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Prueba",
+            "projectName": "Clase12",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Prueba2<Clase12>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Prueba2",
+            "projectName": "Clase12",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Prueba3<Clase12>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Prueba3",
+            "projectName": "Clase12",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Prueba4<Clase12>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Prueba4",
+            "projectName": "Clase12",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestLectura<Clase12>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "TestLectura",
+            "projectName": "Clase12",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AgenciaPrincipal<Clase13>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "AgenciaPrincipal",
+            "projectName": "Clase13",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Principal<Clase5>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "animal.Principal",
+            "projectName": "Clase5",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EmpresaMain<Clase6>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "empresa.EmpresaMain",
+            "projectName": "Clase6",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BreakDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "control.BreakDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ContinueDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "control.ContinueDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DoWhileDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "control.DoWhileDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EnhancedForDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "control.EnhancedForDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ForDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "control.ForDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WhileDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "control.WhileDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IfElseDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "decision.IfElseDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringSwitchDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "decision.StringSwitchDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SwitchDemo<Clase7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "decision.SwitchDemo",
+            "projectName": "Clase7",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Principal<General1>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "main.Principal",
+            "projectName": "General1",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Principal<Problema1>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Principal",
+            "projectName": "Problema1",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Numero<Problema2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Numero",
+            "projectName": "Problema2",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Numeros<Problema3>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Numeros",
+            "projectName": "Problema3",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Principal<Problema4>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Principal",
+            "projectName": "Problema4",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Main",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 0
+        }
+    ]
+}
