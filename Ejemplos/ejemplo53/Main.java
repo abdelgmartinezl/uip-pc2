@@ -3,20 +3,36 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) {
-        String nombre, marca, modelo;
-        int tanque;
+        String nombre = "", marca = "", modelo = "";
+        int tanque = 0;
 
         BufferedReader x = new BufferedReader(
             new InputStreamReader(System.in));
 
         System.out.print("Nombre: ");
-        nombre = x.readLine();
+        try {
+            nombre = x.readLine();
+        } catch (Exception e) {
+            System.out.println("Dato invalido");
+        }
         System.out.print("Marca: ");
-        marca = x.readLine();
+        try {
+            marca = x.readLine();
+        } catch (Exception e) {
+            System.out.println("Dato invalido");
+        }        
         System.out.print("Modelo: ");
-        modelo = x.readLine();
+        try {
+            modelo = x.readLine();
+        } catch (Exception e) {
+            System.out.println("Dato invalido");
+        }
         System.out.print("Tanque: ");
-        tanque = Integer.parseInt(x.readLine());
+        try {
+            tanque = Integer.parseInt(x.readLine());
+        } catch (Exception e) {
+            System.out.println("Dato invalido");
+        }
 
         Carro c = new Carro(marca, modelo, tanque);
         System.out.println("¡Bienvenido(a), " + nombre 
