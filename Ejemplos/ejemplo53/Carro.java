@@ -10,17 +10,14 @@ class Carro {
         System.out.println("Arranco el carro");
     }
 
-    public int avanzar() {
+    public double avanzar(double t, double v) {
         if ( this.tanque_gasolina > 0 ) {
-            System.out.println("Avanzo el carro");
-            double tiempo, velocidad, distancia;
-            BufferedReader x = new BufferedReader(
-                new InputStreamReader(System.in));
-            tiempo = Double.parseDouble(x.readLine());
-            velocidad = Double.parseDouble(x.readLine());
-            distancia = tiempo * velocidad;
+            this.tanque_gasolina -= t*v/10;
+            return t*v;
+        } else {
+            // Se detiene y se apago
+            return 0.0;
         }
-        return 0;
     }
 
 }
