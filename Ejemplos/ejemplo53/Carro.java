@@ -3,6 +3,12 @@ class Carro {
     private String modelo;
     private int tanque_gasolina;
 
+    public Carro(String marca, String modelo, int tanque_gasolina) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.tanque_gasolina = tanque_gasolina;
+    }
+
     public void arrancar() {
         System.out.println("Arranco el carro");
     }
@@ -19,5 +25,17 @@ class Carro {
 
     public void apagar() {
         System.out.println("Apago el carro");
+    }
+
+    public String getMarca() {
+        return this.marca;
+    }
+    
+    public String getModelo() {
+        return this.modelo;
+    }
+
+    public int getTanqueGasolina() {
+        return this.tanque_gasolina;
     }
 }
