@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.4" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #666633;">
+         <children>
+            <Button layoutX="102.0" layoutY="24.0" mnemonicParsing="false" onAction="#chotear" style="-fx-background-color: #FFFF;" text="Woyala!">
+               <font>
+                  <Font name="PT Sans" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="80.0" mnemonicParsing="false" onAction="#saludar" prefHeight="40.0" prefWidth="96.0" style="-fx-background-color: #FFFF;" text="Wapin!">
+               <font>
+                  <Font name="PT Sans" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="mensaje" layoutX="141.0" layoutY="144.0" text="..." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nombre" layoutX="148.0" layoutY="87.0" prefHeight="27.0" prefWidth="133.0" promptText="A quien?">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
