@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
@@ -17,9 +19,16 @@
    <children>
       <Pane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <ImageView fx:id="humano" fitHeight="124.0" fitWidth="151.0" layoutX="38.0" layoutY="38.0" onMouseClicked="#cambiar" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="humano" fitHeight="124.0" fitWidth="151.0" layoutX="38.0" layoutY="46.0" onMouseClicked="#cambiar" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@1.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="status" fill="#ff1f1f" layoutX="60.0" layoutY="46.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="87.0" layoutY="38.0" text="Hackeando" />
+            <ImageView fx:id="cheinchein" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@3.png" />
                </image>
             </ImageView>
          </children>
